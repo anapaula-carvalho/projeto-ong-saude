@@ -1,0 +1,161 @@
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 40px 20px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 50px;
+}
+
+/* Centraliza títulos das seções */
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Seção Sobre */
+.sobre-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.sobre-conteudo img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.sobre-texto p, .sobre-texto strong {
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Projetos */
+.projetos-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.projeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.projeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.projeto:hover img {
+    transform: scale(1.05);
+}
+
+.projeto p {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Contato */
+#contato address, #contato p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+#btn-contato {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-contato:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .sobre-conteudo, .projeto {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}

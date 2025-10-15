@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Saúde para Todos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <img src="images/logo.png" alt="Logo da ONG Saúde para Todos" width="150">
+        <h1>ONG Saúde para Todos</h1>
+        <nav>
+            <a href="#sobre">Sobre</a> | 
+            <a href="#projetos">Projetos</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header> 
+
+    <!-- Sobre a ONG -->
+    <main>
+        <section id="sobre">
+            <h2>Sobre a ONG</h2>
+            <div class="sobre-conteudo">
+                <img src="images/medica.jpeg" alt="Médica da ONG Saúde para Todos">
+                <div class="sobre-texto">
+                    <p>Somos a ONG Saúde para Todos, dedicada a promover saúde e bem-estar para comunidades em situação de vulnerabilidade. Atuamos com compromisso social, oferecendo serviços de qualidade para melhorar a vida das pessoas.</p>
+
+                    <p><strong>Missão:</strong> Garantir acesso a cuidados básicos de saúde e prevenção, levando informação e suporte para quem mais precisa.</p>
+
+                    <p><strong>Visão:</strong> Criar comunidades mais saudáveis, conscientes sobre prevenção de doenças e engajadas na promoção do bem-estar coletivo.</p>
+
+                    <p><strong>Valores:</strong> Solidariedade, Empatia, Transparência e Sustentabilidade, guiando todas as nossas ações e projetos.</p>
+
+                    <p>Nossa equipe é formada por profissionais de saúde, educadores e voluntários comprometidos com o desenvolvimento social e humano. Realizamos campanhas de vacinação, atendimentos médicos, palestras educativas e programas de prevenção de doenças.</p>
+
+                    <p>Trabalhamos em parceria com instituições públicas, privadas e outros projetos sociais para ampliar nosso impacto e alcançar cada vez mais pessoas que necessitam de apoio.</p>
+
+                    <p>Além disso, promovemos ações de conscientização sobre hábitos saudáveis, prevenção de doenças e acesso à saúde, buscando transformar positivamente a vida das comunidades que atendemos.</p>
+                </div>
+            </div>
+        </section> 
+
+        <!-- Projetos -->
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="projetos-conteudo">
+                <div class="projeto">
+                    <img src="images/vacina.jpg" alt="Campanha de vacinação">
+                    <p>Campanha de vacinação</p>
+                </div>
+                <div class="projeto">
+                    <img src="images/consulta.jpeg" alt="Consultas e exames gratuitos">
+                    <p>Consultas e exames gratuitos</p>
+                </div>
+                <div class="projeto">
+                    <img src="images/palestra.jpg" alt="Palestras de prevenção">
+                    <p>Palestras de prevenção e educação em saúde</p>
+                </div>
+            </div>
+        </section> 
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <address>Rua treze de maio, 25 - Bairro - Socorro-SP</address>
+            <p>Telefone: <a href="tel:+5511912345678">(11) 91234-5678</a></p>
+            <p>Email: <a href="mailto:contato@saudeparatodos.org">contato@saudeparatodos.org</a></p>
+            <button id="btn-contato">Clique aqui para mensagem</button>
+        </section>
+    </main> 
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 ONG Saúde para Todos</p>
+        <p>Siga-nos nas redes sociais: Facebook | Instagram</p>
+    </footer>
+
+    <!-- JavaScript simples -->
+    <script>
+        const botaoContato = document.getElementById("btn-contato");
+
+        botaoContato.addEventListener("click", function() {
+            alert("Obrigado por visitar nosso site! Entre em contato conosco através do telefone ou e-mail.");
+        });
+    </script>
+</body>
+
+</html>
