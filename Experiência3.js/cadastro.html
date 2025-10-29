@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - ONG Saúde para Todos</title>
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <img src="images/logo.png" alt="Logo da ONG Saúde para Todos" class="logo">
+        <h1>Cadastro de Voluntário/Doador</h1>
+
+        <!-- Menu desktop -->
+        <nav class="menu">
+            <div class="menu-item"><a href="index.html#sobre">Sobre</a></div>
+            <div class="menu-item"><a href="projetos.html">Projetos</a>
+                <div class="submenu">
+                    <a href="projetos.html#campanhas">Campanhas</a>
+                    <a href="projetos.html#consultas">Consultas</a>
+                    <a href="projetos.html#palestras">Palestras</a>
+                </div>
+            </div>
+            <div class="menu-item"><a href="cadastro.html">Cadastro</a></div>
+            <div class="menu-item"><a href="index.html#contato">Contato</a></div>
+        </nav>
+
+        <!-- Menu hambúrguer mobile -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu-mobile" id="menu-mobile">
+            <a href="index.html#sobre">Sobre</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="index.html#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <section id="formulario-cadastro">
+            <h2>Preencha seus dados</h2>
+            <form id="cadastro-form">
+                <!-- Dados pessoais -->
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00" maxlength="14">
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000" maxlength="15">
+
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                </fieldset>
+
+                <!-- Endereço -->
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required placeholder="Rua, número, complemento">
+
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" required placeholder="00000-000" maxlength="9">
+
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required placeholder="Cidade">
+
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" required>
+                        <option value="">Selecione</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit">Enviar Cadastro</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>© 2025 ONG Saúde para Todos</p>
+        <p>Siga-nos nas redes sociais: Facebook | Instagram</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

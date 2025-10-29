@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Saúde para Todos</title>
+
+    <!-- Importando os arquivos CSS -->
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* TEXTO SOBRE */
+        .sobre-texto p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        /* Projetos */
+        .projetos-conteudo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .projeto {
+            width: 250px;
+            text-align: center;
+        }
+
+        /* Botão contato */
+        #btn-contato {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #btn-contato:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <img src="images/logo.png" alt="Logo da ONG Saúde para Todos" width="200" class="logo">
+        <h1>ONG Saúde para Todos</h1>
+        <nav>
+            <a href="#sobre">Sobre</a> | 
+            <a href="#projetos">Projetos</a> |
+            <a href="cadastro.html">Cadastro</a> |
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Sobre a ONG -->
+    <main>
+        <section id="sobre">
+            <h2>Sobre a ONG</h2>
+
+            <!-- Galeria 2x2 -->
+            <div class="sobre-galeria">
+                <img src="images/medico.jpg" alt="Médico da ONG Saúde para Todos" width="200">
+                <img src="images/bebê.jpg" alt="Bebê" width="200">
+                <img src="images/criança.jpg" alt="Criança" width="200">
+                <img src="images/idoso.jpeg" alt="Idoso" width="200">
+            </div>
+
+            <!-- Bloco estilizado para o texto -->
+            <div class="sobre-texto">
+                <p>Somos a ONG Saúde para Todos, dedicada a promover saúde e bem-estar para comunidades em situação de vulnerabilidade. Atuamos com compromisso social, oferecendo serviços de qualidade para melhorar a vida das pessoas.</p>
+
+                <p><strong>Missão:</strong> Garantir acesso a cuidados básicos de saúde e prevenção, levando informação e suporte para quem mais precisa.</p>
+
+                <p><strong>Visão:</strong> Criar comunidades mais saudáveis, conscientes sobre prevenção de doenças e engajadas na promoção do bem-estar coletivo.</p>
+
+                <p><strong>Valores:</strong> Solidariedade, Empatia, Transparência e Sustentabilidade, guiando todas as nossas ações e projetos.</p>
+
+                <p>Nossa equipe é formada por profissionais de saúde, educadores e voluntários comprometidos com o desenvolvimento social e humano. Realizamos campanhas de vacinação, atendimentos médicos, palestras educativas e programas de prevenção de doenças.</p>
+
+                <p>Trabalhamos em parceria com instituições públicas, privadas e outros projetos sociais para ampliar nosso impacto e alcançar cada vez mais pessoas que necessitam de apoio.</p>
+
+                <p>Além disso, promovemos ações de conscientização sobre hábitos saudáveis, prevenção de doenças e acesso à saúde, buscando transformar positivamente a vida das comunidades que atendemos.</p>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="projetos-conteudo">
+                <div class="projeto">
+                    <img src="images/vacina.jpg" alt="Campanha de vacinação" width="200">
+                    <p>Campanha de vacinação</p>
+                </div>
+                <div class="projeto">
+                    <img src="images/consulta.jpeg" alt="Consultas e exames gratuitos" width="200">
+                    <p>Consultas e exames gratuitos</p>
+                </div>
+                <div class="projeto">
+                    <img src="images/palestra.jpg" alt="Palestras de prevenção" width="200">
+                    <p>Palestras de prevenção e educação em saúde</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <address>Rua treze de maio, 25 - Bairro - Socorro-SP</address>
+            <p>Telefone: <a href="tel:+5511971268385">(11) 97126-8385</a></p>
+            <p>Email: <a href="mailto:contato@saudeparatodos.org">contato@saudeparatodos.org</a></p>
+            <button id="btn-contato">Clique aqui para mensagem</button>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 ONG Saúde para Todos</p>
+        <p>Siga-nos nas redes sociais: Facebook | Instagram</p>
+    </footer>
+
+    <!-- JavaScript simples -->
+    <script>
+        const botaoContato = document.getElementById("btn-contato");
+        botaoContato.addEventListener("click", function () {
+            alert("Obrigado por visitar nosso site! Entre em contato conosco através do telefone ou e-mail.");
+        });
+    </script>
+</body>
+</html>

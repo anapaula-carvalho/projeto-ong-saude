@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - ONG Saúde para Todos</title>
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Tags em projetos */
+        .tag {
+            display: inline-block;
+            background-color: var(--color-accent);
+            color: #000;
+            font-size: var(--font-size-xs);
+            padding: 2px 6px;
+            border-radius: var(--radius-sm);
+            margin-bottom: var(--space-1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <img src="images/logo.png" alt="Logo da ONG Saúde para Todos" class="logo">
+        <h1>ONG Saúde para Todos</h1>
+
+        <!-- Menu desktop -->
+        <nav class="menu">
+            <div class="menu-item"><a href="index.html#sobre">Sobre</a></div>
+            <div class="menu-item"><a href="projetos.html">Projetos</a>
+                <div class="submenu">
+                    <a href="projetos.html#campanhas">Campanhas</a>
+                    <a href="projetos.html#consultas">Consultas</a>
+                    <a href="projetos.html#palestras">Palestras</a>
+                </div>
+            </div>
+            <div class="menu-item"><a href="cadastro.html">Cadastro</a></div>
+            <div class="menu-item"><a href="index.html#contato">Contato</a></div>
+        </nav>
+
+        <!-- Menu hambúrguer mobile -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu-mobile" id="menu-mobile">
+            <a href="index.html#sobre">Sobre</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="index.html#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <section id="projetos">
+            <h2>Projetos Sociais</h2>
+            <div class="projetos-conteudo">
+                <div class="projeto" id="campanhas">
+                    <img src="images/vacina.jpg" alt="Campanha de vacinação">
+                    <span class="tag">Vacinação</span>
+                    <p>Campanha de vacinação para imunizar crianças e adultos da comunidade.</p>
+                </div>
+                <div class="projeto" id="consultas">
+                    <img src="images/consulta.jpeg" alt="Consultas e exames gratuitos">
+                    <span class="tag">Consultas</span>
+                    <p>Atendimentos médicos e laboratoriais gratuitos para famílias em vulnerabilidade.</p>
+                </div>
+                <div class="projeto" id="palestras">
+                    <img src="images/palestra.jpg" alt="Palestras de prevenção">
+                    <span class="tag">Educação</span>
+                    <p>Palestras de prevenção e educação em saúde para todas as idades.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>© 2025 ONG Saúde para Todos</p>
+        <p>Siga-nos nas redes sociais: Facebook | Instagram</p>
+    </footer>
+
+    <script>
+        // Menu hambúrguer
+        const hamburger = document.getElementById("hamburger");
+        const menuMobile = document.getElementById("menu-mobile");
+
+        hamburger.addEventListener("click", () => {
+            menuMobile.style.display = menuMobile.style.display === "flex" ? "none" : "flex";
+        });
+    </script>
+</body>
+
+</html>
