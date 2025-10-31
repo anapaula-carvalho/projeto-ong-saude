@@ -30,4 +30,4 @@ Cada experiência prática é organizada em pastas separadas.
 | Experiência 4 | Projeto final completo, integração de HTML, CSS e JS | [Site Abrir](https://anapaula-carvalho.github.io/projeto-ong-saude/Experiencia4/index.html) |
 
 🌐 Site Completo  
-[👉 Clique aqui para ver o site completo](https://anapaula-carvalho.github.io/projeto-ong-saude/Experiencia4/index.html)
+[👉 Clique aqui para ver o site completo](https://anapaula-carvalho.github.io/projeto-ong-saude/)
