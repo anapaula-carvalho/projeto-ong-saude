@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Saúde para Todos</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /*MENU DROPDOWN */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            position: relative;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+            padding: var(--space-2);
+            min-width: 180px;
+            z-index: 10;
+        }
+
+        .submenu a {
+            display: block;
+            margin: var(--space-1) 0;
+        }
+
+        .menu-item:hover .submenu {
+            display: block;
+        }
+
+        /* HAMBURGUER MOBILE */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        .hamburger span {
+            display: block;
+            height: 3px;
+            width: 25px;
+            background: var(--color-primary);
+            border-radius: 3px;
+        }
+
+        .menu-mobile {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+            margin-top: var(--space-2);
+        }
+
+        .menu-mobile a {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+
+        /*BOTÃO DARK MODE*/
+        .dark-toggle {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .dark-toggle:hover {
+            background-color: #555;
+        }
+
+        /*MODO ESCURO*/
+        body.dark-mode {
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+
+        body.dark-mode header {
+            background-color: #1f1f1f;
+        }
+
+        body.dark-mode footer {
+            background-color: #1f1f1f;
+            color: #ccc;
+        }
+
+        body.dark-mode .submenu {
+            background-color: #2b2b2b;
+        }
+
+        body.dark-mode .texto-bonito {
+            background-color: #2a2a2a;
+            color: #f1f1f1;
+        }
+
+        body.dark-mode .projeto {
+            background-color: #2a2a2a;
+            color: #f1f1f1;
+        }
+
+        body.dark-mode .tag {
+            background-color: #555;
+            color: #fff;
+        }
+
+        body.dark-mode .hamburger span {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header role="banner">
+        <img src="images/logo.png" alt="Logo da ONG Saúde para Todos" class="logo">
+        <h1>ONG Saúde para Todos</h1>
+
+        <!-- Botão Dark Mode -->
+        <button id="dark-toggle" class="dark-toggle" aria-label="Alternar modo escuro">🌙 Modo Escuro</button>
+
+        <!-- Menu desktop -->
+        <nav class="menu" role="navigation" aria-label="Menu principal">
+            <div class="menu-item"><a href="#sobre">Sobre</a></div>
+            <div class="menu-item"><a href="#projetos">Projetos</a>
+                <div class="submenu" role="menu">
+                    <a href="#projetos" role="menuitem">Campanhas</a>
+                    <a href="#projetos" role="menuitem">Consultas</a>
+                    <a href="#projetos" role="menuitem">Palestras</a>
+                </div>
+            </div>
+            <div class="menu-item"><a href="cadastro.html">Cadastro</a></div>
+            <div class="menu-item"><a href="#contato">Contato</a></div>
+        </nav>
+
+        <!-- Menu hambúrguer mobile -->
+        <div class="hamburger" id="hamburger" tabindex="0" aria-label="Abrir menu de navegação">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu-mobile" id="menu-mobile" role="navigation" aria-label="Menu mobile">
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main role="main">
+        <!-- SOBRE A ONG -->
+        <section id="sobre">
+            <h2>Sobre a ONG</h2>
+
+            <!-- Galeria 2x2 -->
+            <div class="sobre-galeria">
+                <img src="images/medico.jpg" alt="Médico da ONG Saúde para Todos">
+                <img src="images/bebê.jpg" alt="Pediatria">
+                <img src="images/criança.jpg" alt="Pediatria">
+                <img src="images/idoso.jpeg" alt="Idoso">
+            </div>
+
+            <!-- Bloco estilizado para o texto -->
+            <div class="texto-bonito">
+                <p>Somos a ONG Saúde para Todos, dedicada a promover saúde e bem-estar para comunidades em situação de vulnerabilidade. Atuamos com compromisso social, oferecendo serviços de qualidade para melhorar a vida das pessoas.</p>
+
+                <p><strong>Missão:</strong> Garantir acesso a cuidados básicos de saúde e prevenção, levando informação e suporte para quem mais precisa.</p>
+
+                <p><strong>Visão:</strong> Criar comunidades mais saudáveis, conscientes sobre prevenção de doenças e engajadas na promoção do bem-estar coletivo.</p>
+
+                <p><strong>Valores:</strong> Solidariedade, Empatia, Transparência e Sustentabilidade, guiando todas as nossas ações e projetos.</p>
+
+                <p>Nossa equipe é formada por profissionais de saúde, educadores e voluntários comprometidos com o desenvolvimento social e humano. Realizamos campanhas de vacinação, atendimentos médicos, palestras educativas e programas de prevenção de doenças.</p>
+
+                <p>Trabalhamos em parceria com instituições públicas, privadas e outros projetos sociais para ampliar nosso impacto e alcançar cada vez mais pessoas que necessitam de apoio.</p>
+
+                <p>Além disso, promovemos ações de conscientização sobre hábitos saudáveis, prevenção de doenças e acesso à saúde, buscando transformar positivamente a vida das comunidades que atendemos.</p>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="projetos-conteudo">
+                <div class="projeto">
+                    <img src="images/vacina.jpg" alt="Campanha de vacinação">
+                    <span class="tag">Vacinação</span>
+                    <p>Campanha de vacinação para imunizar crianças e adultos.</p>
+                </div>
+                <div class="projeto">
+                    <img src="images/consulta.jpeg" alt="Consultas e exames gratuitos">
+                    <span class="tag">Consultas</span>
+                    <p>Atendimentos médicos e laboratoriais gratuitos.</p>
+                </div>
+                <div class="projeto">
+                    <img src="images/palestra.jpg" alt="Palestras de prevenção">
+                    <span class="tag">Educação</span>
+                    <p>Palestras de prevenção e educação em saúde.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <address>Rua treze de maio, 25 - Bairro - Socorro-SP</address>
+            <p>Telefone: <a href="tel:+5511971268385">(11) 97126-8385</a></p>
+            <p>Email: <a href="mailto:contato@saudeparatodos.org">contato@saudeparatodos.org</a></p>
+            <button id="btn-contato">Clique aqui para mensagem</button>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer role="contentinfo">
+        <p>© 2025 ONG Saúde para Todos</p>
+        <p>Siga-nos nas redes sociais: Facebook | Instagram</p>
+    </footer>
+
+    <!-- JS -->
+    <script>
+        // Botão de contato
+        const botaoContato = document.getElementById("btn-contato");
+        botaoContato.addEventListener("click", function () {
+            alert("Obrigado por visitar nosso site! Entre em contato conosco através do telefone ou e-mail.");
+        });
+
+        // Menu hambúrguer
+        const hamburger = document.getElementById("hamburger");
+        const menuMobile = document.getElementById("menu-mobile");
+
+        hamburger.addEventListener("click", () => {
+            menuMobile.style.display = menuMobile.style.display === "flex" ? "none" : "flex";
+        });
+
+        // Suporte tecla Enter para menu mobile
+        hamburger.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                menuMobile.style.display = menuMobile.style.display === "flex" ? "none" : "flex";
+            }
+        });
+
+        // MODO ESCURO//
+        const toggle = document.getElementById("dark-toggle");
+
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode")) {
+                toggle.textContent = "☀️ Modo Claro";
+            } else {
+                toggle.textContent = "🌙 Modo Escuro";
+            }
+        });
+    </script>
+</body>
+
+</html>
